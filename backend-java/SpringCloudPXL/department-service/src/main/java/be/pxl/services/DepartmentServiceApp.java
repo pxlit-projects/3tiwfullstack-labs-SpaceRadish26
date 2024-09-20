@@ -1,14 +1,17 @@
-package be.pxl.services;
+package be.services;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
+/**
+ * Hello world!
+ *
+ */
 @SpringBootApplication
-public class EmployeeServiceApplication
+public class DepartmentServiceApp
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(EmployeeServiceApplication.class, args);
+        SpringApplication.run(DepartmentServiceApp.class, args);
     }
 }

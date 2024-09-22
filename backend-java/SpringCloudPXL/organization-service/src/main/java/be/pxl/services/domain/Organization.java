@@ -10,12 +10,12 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "department")
+@Table(name = "organization")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Department {
+public class Organization {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,10 +24,12 @@ public class Department {
     private Long organizationId;
     private String name;
 
+    private String adress;
     @Transient
     private List<Employee> employees;
 
-    private String position;
+    @Transient
+    private List<Department> departments;
 
 
 }

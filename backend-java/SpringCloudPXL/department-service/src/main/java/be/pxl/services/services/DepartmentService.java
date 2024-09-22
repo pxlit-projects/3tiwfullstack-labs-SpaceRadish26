@@ -42,6 +42,6 @@ public class DepartmentService implements IDepartmentService {
     public ReturnDepWEmp getDepartmentByOrgIdAndEmployees(Long organizationId) {
         Department department = departmentRepository.findByOrganizationId(organizationId);
 
-        ReturnDepWEmp returnDepWEmp = new ReturnDepWEmp();
+        return new ReturnDepWEmp(department.getEmployees(), department);
     }
 }

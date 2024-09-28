@@ -6,6 +6,10 @@
 </div>
 
 <app-calculator></app-calculator>
+<h1 *ngIf="selectedPokemon !== null">You have selected: {{selectedPokemon.name}}</h1>
+<div *ngFor="let pokemon of pokemons">
+  <app-pokemon [pokemon]="pokemon" (cardClick)="selectPokemon(pokemon)" ></app-pokemon>
+</div>
 
 
 

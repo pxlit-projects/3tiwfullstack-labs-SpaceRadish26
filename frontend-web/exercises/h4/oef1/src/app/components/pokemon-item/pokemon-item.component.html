@@ -1,0 +1,8 @@
+<div
+  class="pokemon-item"
+  [ngStyle]="{ 'background-color': getBackgroundColor(), 'border': isSelected ? '2px solid gold' : 'none' }"
+  (click)="onCardClick()"
+>
+  <img [src]="pokemon.icon" [alt]="pokemon.name">
+  <p>{{ pokemon.name }}</p>
+</div>

@@ -1,0 +1,24 @@
+:host {
+  padding: 1rem;
+  margin: 0.5rem;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  display: block;
+}
+
+.pokemon-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border 0.3s;
+}
+
+.pokemon-item img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+

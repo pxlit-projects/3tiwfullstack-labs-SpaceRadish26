@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  *
  */
 @SpringBootApplication
-public class DepartmentServiceApp
+public class NotificationService
 {
     public static void main( String[] args )
     {
-        SpringApplication.run(DepartmentServiceApp.class, args);
+        SpringApplication.run(NotificationService.class, args);
     }
 }
